@@ -1,0 +1,194 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+  color: #333;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 32px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin-bottom: 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.nav-btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  border: none;
+  background: transparent;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-btn.active,
+.nav-btn:hover {
+  background: linear-gradient(90deg, #7f00ff, #e100ff);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(127, 0, 255, 0.2);
+}
+
+.section-box {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #6b6b6b;
+  margin-bottom: 28px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 0;
+  color: #666;
+}
+
+.empty-state .icon {
+  font-size: 60px;
+  color: #bbb;
+  margin-bottom: 16px;
+}
+
+.cta-btn {
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #7f00ff, #e100ff);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  margin-top: 24px;
+  font-size: 16px;
+}
+
+.cta-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.styled-table th {
+  background: #f5f5f7;
+  font-weight: 600;
+  color: #444;
+}
+
+.styled-table input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+button.save,
+button.delete {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+button.save {
+  background: #4caf50;
+  color: white;
+}
+
+button.delete {
+  background: #f44336;
+  color: white;
+}
+
+.retrieve-input {
+  display: flex;
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.retrieve-input input {
+  padding: 12px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.retrieve-input button {
+  padding: 12px 24px;
+  background: #7f00ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.no-data {
+  color: #999;
+  font-size: 16px;
+}
+
+.result-box {
+  background: #f1f1ff;
+  border: 1px solid #e0e0f0;
+  padding: 20px;
+  border-radius: 14px;
+  line-height: 1.8;
+}
